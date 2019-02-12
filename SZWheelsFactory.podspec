@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'All' do |ss|
-     ss.dependency 'SZWheels/InitDataChain'
+     ss.dependency 'SZWheelsFactory/InitDataChain'
   end
 
 end
