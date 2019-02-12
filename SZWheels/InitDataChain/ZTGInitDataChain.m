@@ -8,6 +8,7 @@
 
 #import "ZTGInitDataChain.h"
 #import <SZCategories/NSObject+ZTThread.h>
+#import <SZCategories/SafeHeader.h>
 
 #define kLockTimeOut (5 * NSEC_PER_SEC)
 
