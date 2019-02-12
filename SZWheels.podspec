@@ -15,14 +15,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source       = { :git => "https://github.com/ace2github/SZWheelsFactory.git", :tag => s.version }
 
-  s.default_subspec='SZWheelsFactory'
+  s.default_subspec='All'
 
   s.subspec 'InitDataChain' do |ss|
-      ss.source_files = 'SZWheelsFactory/InitDataChain/**/*'
+      ss.source_files = 'SZWheels/InitDataChain/**/*'
+      ss.dependency 'SZCategories'
   end
 
-  s.subspec 'SZWheelsFactory' do |ss|
-     ss.dependency 'SZWheelsFactory/InitDataChain'
+  s.subspec 'All' do |ss|
+     ss.dependency 'SZWheels/InitDataChain'
   end
 
 end
