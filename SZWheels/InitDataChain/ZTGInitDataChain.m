@@ -65,15 +65,15 @@
     dispatch_semaphore_wait(_groupLock, DISPATCH_TIME_FOREVER);
     _allTaskCompleteBlk = complete;
     
-    @weakify(self);
+    typeof(self) __weak weakSelf = self;
     dispatch_group_notify(_taskGroup, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        @strongify(self);
-        _groupTaskCount = 0;
+        typeof(weakSelf) __weak strongSelf = weakSelf;
+        strongSelf.groupTaskCount = 0;
         
         [NSObject zt_runInMainThread:^{
             NSLog(@"___ finish all tasks");
-            if (self.allTaskCompleteBlk) self.allTaskCompleteBlk();
-            self.allTaskCompleteBlk = nil;
+            if (strongSelf.allTaskCompleteBlk) strongSelf.allTaskCompleteBlk();
+            strongSelf.allTaskCompleteBlk = nil;
         }];
     });
     dispatch_semaphore_signal(_groupLock);
