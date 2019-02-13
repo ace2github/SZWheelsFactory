@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SZWheels"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "SZWheels"
 
   s.description  = <<-DESC
