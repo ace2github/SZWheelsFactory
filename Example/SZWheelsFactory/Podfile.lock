@@ -1,0 +1,32 @@
+PODS:
+  - SZCategories (0.0.2):
+    - SZCategories/SZCategories (= 0.0.2)
+  - SZCategories/Macros (0.0.2)
+  - SZCategories/Safe (0.0.2)
+  - SZCategories/SZCategories (0.0.2):
+    - SZCategories/Macros
+    - SZCategories/Safe
+    - SZCategories/Thread
+  - SZCategories/Thread (0.0.2)
+  - SZWheelsFactory (0.0.2):
+    - SZWheelsFactory/All (= 0.0.2)
+  - SZWheelsFactory/All (0.0.2):
+    - SZWheelsFactory/InitDataChain
+  - SZWheelsFactory/InitDataChain (0.0.2):
+    - SZCategories
+
+DEPENDENCIES:
+  - SZWheelsFactory
+
+SPEC REPOS:
+  "git@github.com:ace2github/SZSpecs.git":
+    - SZCategories
+    - SZWheelsFactory
+
+SPEC CHECKSUMS:
+  SZCategories: 89c833a097f373d1da8458671acd72bea3c7ff2d
+  SZWheelsFactory: 18ffebe1ee28370d2d1d9319c565833f82650160
+
+PODFILE CHECKSUM: f49488a148777b594615962e2c47fdb2df7abb80
+
+COCOAPODS: 1.5.3

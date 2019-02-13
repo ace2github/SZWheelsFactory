@@ -15,6 +15,7 @@
 		1C0D93BE2212BF7000853CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D93BD2212BF7000853CDC /* main.m */; };
 		1C0D93C82212BF7000853CDC /* SZWheelsFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D93C72212BF7000853CDC /* SZWheelsFactoryTests.m */; };
 		1C0D93D32212BF7000853CDC /* SZWheelsFactoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D93D22212BF7000853CDC /* SZWheelsFactoryUITests.m */; };
+		3760DA535087DA9D0A49259F /* libPods-SZWheelsFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 135C56544EB243C5C0867EDB /* libPods-SZWheelsFactory.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135C56544EB243C5C0867EDB /* libPods-SZWheelsFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZWheelsFactory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0D93AB2212BF6F00853CDC /* SZWheelsFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZWheelsFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0D93AE2212BF6F00853CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C0D93AF2212BF6F00853CDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		1C0D93CE2212BF7000853CDC /* SZWheelsFactoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZWheelsFactoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0D93D22212BF7000853CDC /* SZWheelsFactoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZWheelsFactoryUITests.m; sourceTree = "<group>"; };
 		1C0D93D42212BF7000853CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2B03ECB88824B820BD8FAE /* Pods-SZWheelsFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZWheelsFactory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZWheelsFactory/Pods-SZWheelsFactory.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFC2EAB65D2DD8788C9259F /* Pods-SZWheelsFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZWheelsFactory.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZWheelsFactory/Pods-SZWheelsFactory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3760DA535087DA9D0A49259F /* libPods-SZWheelsFactory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F360FE046E4680FF69E42F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C2B03ECB88824B820BD8FAE /* Pods-SZWheelsFactory.debug.xcconfig */,
+				BFFC2EAB65D2DD8788C9259F /* Pods-SZWheelsFactory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1C0D93A22212BF6F00853CDC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				1C0D93C62212BF7000853CDC /* SZWheelsFactoryTests */,
 				1C0D93D12212BF7000853CDC /* SZWheelsFactoryUITests */,
 				1C0D93AC2212BF6F00853CDC /* Products */,
+				0F360FE046E4680FF69E42F4 /* Pods */,
+				686EEEFC4C4E757D74C54546 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = SZWheelsFactoryUITests;
 			sourceTree = "<group>";
 		};
+		686EEEFC4C4E757D74C54546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				135C56544EB243C5C0867EDB /* libPods-SZWheelsFactory.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C0D93D72212BF7000853CDC /* Build configuration list for PBXNativeTarget "SZWheelsFactory" */;
 			buildPhases = (
+				79FC9D6EBD8EF3F160F640B6 /* [CP] Check Pods Manifest.lock */,
 				1C0D93A72212BF6F00853CDC /* Sources */,
 				1C0D93A82212BF6F00853CDC /* Frameworks */,
 				1C0D93A92212BF6F00853CDC /* Resources */,
@@ -256,6 +281,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79FC9D6EBD8EF3F160F640B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SZWheelsFactory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C0D93A72212BF6F00853CDC /* Sources */ = {
@@ -433,6 +483,7 @@
 		};
 		1C0D93D82212BF7000853CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2B03ECB88824B820BD8FAE /* Pods-SZWheelsFactory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +501,7 @@
 		};
 		1C0D93D92212BF7000853CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFC2EAB65D2DD8788C9259F /* Pods-SZWheelsFactory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
