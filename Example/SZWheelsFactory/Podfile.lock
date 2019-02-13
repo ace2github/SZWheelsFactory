@@ -8,25 +8,25 @@ PODS:
     - SZCategories/Safe
     - SZCategories/Thread
   - SZCategories/Thread (0.0.2)
-  - SZWheelsFactory (0.0.2):
-    - SZWheelsFactory/All (= 0.0.2)
-  - SZWheelsFactory/All (0.0.2):
-    - SZWheelsFactory/InitDataChain
-  - SZWheelsFactory/InitDataChain (0.0.2):
+  - SZWheels (0.0.5):
+    - SZWheels/All (= 0.0.5)
+  - SZWheels/All (0.0.5):
+    - SZWheels/InitDataChain
+  - SZWheels/InitDataChain (0.0.5):
     - SZCategories
 
 DEPENDENCIES:
-  - SZWheelsFactory
+  - SZWheels
 
 SPEC REPOS:
   "git@github.com:ace2github/SZSpecs.git":
     - SZCategories
-    - SZWheelsFactory
+    - SZWheels
 
 SPEC CHECKSUMS:
   SZCategories: 89c833a097f373d1da8458671acd72bea3c7ff2d
-  SZWheelsFactory: 18ffebe1ee28370d2d1d9319c565833f82650160
+  SZWheels: 534bb732af595ec6d8a5fa4eef04400623a37bed
 
-PODFILE CHECKSUM: f49488a148777b594615962e2c47fdb2df7abb80
+PODFILE CHECKSUM: 34e668075d1cb14f81142a092add2f5d6053f75c
 
 COCOAPODS: 1.5.3

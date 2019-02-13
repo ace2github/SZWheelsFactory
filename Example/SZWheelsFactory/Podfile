@@ -5,5 +5,5 @@ source 'git@github.com:ace2github/SZSpecs.git'
 platform :ios, '8.0'
 
 target 'SZWheelsFactory' do
-  pod 'SZWheelsFactory'
+  pod 'SZWheels'
 end

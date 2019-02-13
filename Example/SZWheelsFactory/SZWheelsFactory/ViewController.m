@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import <SZWheels/ZTGInitDataChain.h>
 @interface ViewController ()
-
+@property (nonatomic, strong) ZTGInitDataChain *dataChain;
 @end
 
 @implementation ViewController
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _dataChain = [[ZTGInitDataChain alloc] init];
+    [_dataChain completeAllTaskInGroup:^{
+        
+    }];
 }
 
 
